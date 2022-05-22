@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DBConnection {
 
-    public static void main(String[] args) throws SQLException {
+    public String db() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/lee";
         String userName = "root";
         String password = "1224bear";
@@ -22,7 +22,10 @@ public class DBConnection {
         resultSet.close();
         statement.close();
         connection.close();
+
+        return name;
     }
+
 
 
 }
