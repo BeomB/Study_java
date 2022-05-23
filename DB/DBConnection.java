@@ -1,10 +1,13 @@
 package DB;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class DBConnection {
 
-    public String db() throws SQLException {
+    public ArrayList<trans> db() throws SQLException {
+        ArrayList<trans> arrayList = new ArrayList();
+
         String url = "jdbc:mysql://localhost:3306/kobe";
         String userName = "root";
         String password = "1224bear";
@@ -13,17 +16,21 @@ public class DBConnection {
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("select * from person");
 
-        resultSet.next();
-        String name = resultSet.getString("name");
-        String number= resultSet.getString("number");
-        System.out.println(name);
-        System.out.println(number);
+        while (resultSet.next())
+        {
+            Integer number= resultSet.getInt("number");
+            String name = resultSet.getString("name");
+            arrayList.add(new trans(number,name));
+        }
+
 
         resultSet.close();
         statement.close();
         connection.close();
 
-        return name;
+
+
+        return arrayList;
     }
 
 

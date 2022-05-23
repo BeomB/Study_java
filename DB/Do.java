@@ -28,9 +28,11 @@ class Schdule {
         @Override
         public void run() {
             try {
-                if(dbConnection.db().equals("이범기2"))
+                if(dbConnection.db()!=null)
                 {
-                    System.out.println(LocalDateTime.now()+"hello");
+                    System.out.println(dbConnection.db().get(0).getName());
+                    System.out.println(dbConnection.db().get(1).getName());
+
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
