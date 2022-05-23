@@ -1,6 +1,7 @@
 package DB;
 
 import java.sql.SQLException;
+import java.time.LocalDateTime;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -10,8 +11,9 @@ public class Do {
     Schdule schdule = new Schdule();
     Timer timer = new Timer();
     long delay = 3000L;
+    long period = 1000L;
     final TimerTask timerTask = schdule.timerTask;
-    timer.schedule(timerTask,delay);
+    timer.scheduleAtFixedRate(timerTask, delay, period);
 
 
     }
@@ -28,16 +30,15 @@ class Schdule {
             try {
                 if(dbConnection.db().equals("이범기2"))
                 {
-                    System.out.println("hello");
+                    System.out.println(LocalDateTime.now()+"hello");
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
+
         }
     };
 
 
 }
-
-
-//https://codechacha.com/ko/java-timer/

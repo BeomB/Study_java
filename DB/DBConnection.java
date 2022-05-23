@@ -5,7 +5,7 @@ import java.sql.*;
 public class DBConnection {
 
     public String db() throws SQLException {
-        String url = "jdbc:mysql://localhost:3306/lee";
+        String url = "jdbc:mysql://localhost:3306/kobe";
         String userName = "root";
         String password = "1224bear";
 
@@ -15,9 +15,9 @@ public class DBConnection {
 
         resultSet.next();
         String name = resultSet.getString("name");
-        String part= resultSet.getString("part");
+        String number= resultSet.getString("number");
         System.out.println(name);
-        System.out.println(part);
+        System.out.println(number);
 
         resultSet.close();
         statement.close();
