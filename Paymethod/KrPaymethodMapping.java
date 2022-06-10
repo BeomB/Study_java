@@ -1,7 +1,5 @@
 package Paymethod;
 
-import com.sun.source.tree.Tree;
-
 import java.util.TreeMap;
 
 public class KrPaymethodMapping implements PaymethodMapping {
@@ -12,7 +10,7 @@ public class KrPaymethodMapping implements PaymethodMapping {
     private PaymethodStorage paymethodStorage = PaymethodStorage.getInstance();
 
     @Override
-    public TreeMap<String, String> mapping(TreeMap<String, String> paymap, String lang) {
+    public TreeMap<String, String> mapping(TreeMap<String, String> paymap) {
 
         TreeMap<String, String> result = new TreeMap<>();
 

@@ -10,13 +10,13 @@ public class JaPaymethodMapping implements PaymethodMapping {
     private PaymethodStorage paymethodStorage = PaymethodStorage.getInstance();
 
     @Override
-    public TreeMap<String, String> mapping(TreeMap<String, String> paymap, String lang) {
+    public TreeMap<String, String> mapping(TreeMap<String, String> paymap) {
 
         TreeMap<String, String> result = new TreeMap<>();
 
         paymap.forEach((key, value) ->
         {
-            result.put(key, paymethodStorage.getPaymethod(key).getKrName());
+            result.put(key, paymethodStorage.getPaymethod(key).getJaName());
         });
         return result;
     }
