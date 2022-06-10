@@ -6,20 +6,17 @@ public class PaymethodRun {
 
     public static void main(String[] args) {
 
-        String lang = "KO";
+        String lang = "ja";
 
-        PaymethodStorage PAYMETHOD_STORAGE = PaymethodStorage.getInstance();
-
+        TreeMap<String,String> testMap = new TreeMap();     
+        testMap.put("C000","VISA 한국");
+        System.out.println("testMap = " + testMap);
+        
         PaymethodFactory paymethodFactory = new PaymethodFactory();
-        PaymethodMapping paymethodMapping = paymethodFactory.getPaymethodMapping(lang);
+        PaymethodMapping paymethodMapping2 = paymethodFactory.getPaymethodMapping(lang);
+        System.out.println("paymethodMapping2 = " + paymethodMapping2.mapping(testMap));
 
-        TreeMap<String,String> treeMap = new TreeMap();
-
-        treeMap.put("C000","VISA");
-
-        paymethodMapping.mapping(treeMap);
-        System.out.println("treeMap = " + treeMap);
-
+        
     }
 
 }
