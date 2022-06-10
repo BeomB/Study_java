@@ -16,11 +16,10 @@ public class KrPaymethodMapping implements PaymethodMapping{
 
         TreeMap<String,String> result = new TreeMap<>();
 
-        paymap.forEach(key, value)->
+        paymap.forEach((key, value)->
         {
             result.put(key,paymethodStorage.getPaymethod(key).getKrName());
-        };
-
+        });
         return result;
     }
 
