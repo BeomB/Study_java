@@ -1,13 +1,11 @@
 package Paymethod;
 
-import com.sun.source.tree.Tree;
-
 import java.util.TreeMap;
 
-public class KrPaymethodMapping implements PaymethodMapping {
+public class TwPaymethodMapping implements PaymethodMapping {
 
 
-    private static String LANG = "KO";
+    private static String LANG = "TW";
 
     private PaymethodStorage paymethodStorage = PaymethodStorage.getInstance();
 
@@ -18,7 +16,7 @@ public class KrPaymethodMapping implements PaymethodMapping {
 
         paymap.forEach((key, value) ->
         {
-            result.put(key, paymethodStorage.getPaymethod(key).getKrName());
+            result.put(key, paymethodStorage.getPaymethod(key).getTwName());
         });
         return result;
     }

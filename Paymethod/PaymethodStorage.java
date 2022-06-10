@@ -89,16 +89,6 @@ public class PaymethodStorage {
         storage.put("CC27", Paymethod.CC27);
         storage.put("CC28", Paymethod.CC28);
         storage.put("CC99", Paymethod.CC99);
-
-
-
-
-
-
-
-
-
-
     }
 
     public static PaymethodStorage getInstance()

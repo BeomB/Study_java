@@ -1,13 +1,11 @@
 package Paymethod;
 
-import com.sun.source.tree.Tree;
-
 import java.util.TreeMap;
 
-public class KrPaymethodMapping implements PaymethodMapping {
+public class EnPaymethodMapping implements PaymethodMapping {
 
 
-    private static String LANG = "KO";
+    private static String LANG = "EN";
 
     private PaymethodStorage paymethodStorage = PaymethodStorage.getInstance();
 
