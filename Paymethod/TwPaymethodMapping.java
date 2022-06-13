@@ -5,20 +5,24 @@ import java.util.TreeMap;
 public class TwPaymethodMapping implements PaymethodMapping {
 
 
-    private static String LANG = "TW";
+    private static String LANG = "th";
 
     private PaymethodStorage paymethodStorage = PaymethodStorage.getInstance();
 
     @Override
-    public TreeMap<String, String> mapping(TreeMap<String, String> paymap) {
+    public MappingDto mapping(TreeMap<String, String> paymap) {
 
-        TreeMap<String, String> result = new TreeMap<>();
+        MappingDto mappingDto = new MappingDto();
 
         paymap.forEach((key, value) ->
         {
-            result.put(key, paymethodStorage.getPaymethod(key).getTwName());
+            if (key.contains("CC")) {
+                mappingDto.getLocalMap().put(key, paymethodStorage.getPaymethod(key).getTwName());
+            } else {
+                mappingDto.getGlobalMap().put(key, paymethodStorage.getPaymethod(key).getTwName());
+            }
         });
-        return result;
+        return mappingDto;
     }
 
     @Override

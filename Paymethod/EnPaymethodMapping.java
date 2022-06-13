@@ -5,21 +5,30 @@ import java.util.TreeMap;
 public class EnPaymethodMapping implements PaymethodMapping {
 
 
-    private static String LANG = "EN";
+    private static String LANG = "en";
 
     private PaymethodStorage paymethodStorage = PaymethodStorage.getInstance();
 
-    @Override
-    public TreeMap<String, String> mapping(TreeMap<String, String> paymap) {
 
-        TreeMap<String, String> result = new TreeMap<>();
+    @Override
+    public MappingDto mapping(TreeMap<String, String> paymap) {
+
+        MappingDto mappingDto = new MappingDto();
+
+
 
         paymap.forEach((key, value) ->
         {
-            result.put(key, paymethodStorage.getPaymethod(key).getEnName());
+            if (key.contains("CC")) {
+                mappingDto.getLocalMap().put(key, paymethodStorage.getPaymethod(key).getEnName());
+            } else {
+                mappingDto.getGlobalMap().put(key, paymethodStorage.getPaymethod(key).getEnName());
+            }
         });
-        return result;
+        return mappingDto;
     }
+
+    ////// 객체 선언까지는 함
 
     @Override
     public String getLang(String lang) {
@@ -29,3 +38,6 @@ public class EnPaymethodMapping implements PaymethodMapping {
 
 
 }
+
+
+

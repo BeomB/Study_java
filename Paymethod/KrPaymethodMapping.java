@@ -5,20 +5,26 @@ import java.util.TreeMap;
 public class KrPaymethodMapping implements PaymethodMapping {
 
 
-    private static String LANG = "KO";
+    private static String LANG = "ko";
 
     private PaymethodStorage paymethodStorage = PaymethodStorage.getInstance();
 
     @Override
-    public TreeMap<String, String> mapping(TreeMap<String, String> paymap) {
+    public MappingDto mapping(TreeMap<String, String> paymap) {
 
-        TreeMap<String, String> result = new TreeMap<>();
+        MappingDto mappingDto = new MappingDto();
+
+
 
         paymap.forEach((key, value) ->
         {
-            result.put(key, paymethodStorage.getPaymethod(key).getKrName());
+            if (key.contains("CC")) {
+                mappingDto.getLocalMap().put(key, paymethodStorage.getPaymethod(key).getKrName());
+            } else {
+                mappingDto.getGlobalMap().put(key, paymethodStorage.getPaymethod(key).getKrName());
+            }
         });
-        return result;
+        return mappingDto;
     }
 
     @Override
