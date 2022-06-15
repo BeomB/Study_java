@@ -1,105 +1,84 @@
 package Paymethod;
 
-        public enum Paymethod {
+public enum Paymethod {
 
-               C000("VISA", "VISA","VISA","VISA","VISA","VISA"),
-               C001("MasterCard", "MasterCard","MasterCard","MasterCard","MasterCard","MasterCard"),
-               C002("AMEX", "AMEX","AMEX","AMEX","AMEX","AMEX"),
-               C003("JCB", "JCB","JCB","JCB","JCB","JCB"),
-               C004("DINERS", "DINERS","DINERS","DINERS","DINERS","DINERS"),
-               C005("DISCOVER", "DISCOVER","DISCOVER","DISCOVER","Discover Credit Cards","DISCOVER"),
-               C007("MIR", "MIR","MIR","MIR","MIR","MIR"),
-               C010("¾Ë¸®ÆäÀÌ", "AliPay","AliPay","ò¨Üõ?","ò¨ÜõÜÄ","AliPay"),
-               C015("PayPal", "PayPal","PayPal","??","PayPal","PayPal"),
-               C020("Tenpay", "Tenpay","Tenpay","?Üõ÷×","î¯Üõ÷×","Tenpay"),
-               C023("UnionPay", "UnionPay","UnionPay","??","ëŞÖ¤","UnionPay"),
-               /** ÀÌÄÁ¾øÀ½**/
-               C024("eContext", "eContext ¿µ¾î","eContext ÀÏº»","eContext Áß±¹¾î","eContext ´ë¸¸","eContext ÅÂ±¹"),
-               C025("WeChat", "WeChat","WeChat","Ú°ãá","Ú°ãá","WeChat"),
-               C026("UnionPay(Offline)", "UnionPay (Offline)","UnionPay(Offline)","??£¨?ù»£©","ëŞÖ¤£¨×îàÊ£©","UnionPay (Offline)"),
-               C027("Molpay", "MOLPay","Molpay","Molpay","MOLPay","MOLPay"),
-               C033("WeChat(In App)", "WeChat(In App)","WeChat(In App)","Ú°ãá(In App)","Ú°ãá(In App)","WeChat(In App)"),
-               C037("WeChat(OA)", "WeChat(OA)","WeChat(OA)","Ú°ãá(OA)","Ú°ãá(OA)","WeChat(OA)"),
-               C039("Molpay(VND)", "MOLPay(VND)","Molpay(VND)","Molpay(VND)","MOLPay(VND)","MOLPay(VND)"),
-               C040("Molpay(THB)", "MOLPay(THB)","Molpay(THB)","Molpay(THB)","MOLPay(THB)","MOLPay(THB)"),
-               C041("Åä½º", "TOSS","TOSS","TOSS","TOSS","TOSS"),
-               C042("PayPal", "PayPal","PayPal","??","PayPal","PayPal"),
-               C043("À¯¸Ó´Ï", "Yoomoney","Yoomoney","Yoomoney","Yoomoney","Yoomoney"),
-               C044("Ä«Ä«¿ÀÆäÀÌ", "Kakao pay","Kakao pay","Kakao pay","Kakao pay","Kakao pay"),
-               C045("°¡»ó°èÁÂ ", "Virtual account","«Ğ?«Á«ã«ëÏ¢ñ¨","????","úÈëôíãûÂ","???????????"),
-               C046("ÆäÀÌÄÚ", "Payco","Payco","Payco","PAYCO","Payco"),
-               C047("WeChat(MINI)", "WeChat(MINI)","WeChat(MINI)","Ú°ãá(MINI)","Ú°ãá(MINI)","WeChat(MINI)"),
-               C049("UnionPay(In App)", "UnionPay(In App)","UnionPay(In App)","??(In App)","ëŞÖ¤(In App)","UnionPay(In App)"),
-               C056("½º¸¶ÀÏÆäÀÌ", "Smile pay","Smile pay","SmilePay","SmilePay","SmilePay"),
-               /** VN eWallet**/
-               C057("VN eWallet", "VN eWallet ¿µ¾î","VN eWallet ÀÏº»","VN eWallet Áß±¹¾î","VN eWallet ´ë¸¸","VN eWallet ÅÂ±¹"),
+    C000("VISA", "VISA","VISA","VISA","VISA","VISA"),
+    C001("MasterCard", "MasterCard","MasterCard","MasterCard","MasterCard","MasterCard"),
+    C002("AMEX", "AMEX","AMEX","AMEX","AMEX","AMEX"),
+    C003("JCB", "JCB","JCB","JCB","JCB","JCB"),
+    C004("DINERS", "DINERS","DINERS","DINERS","DINERS","DINERS"),
+    C005("DISCOVER", "DISCOVER","DISCOVER","DISCOVER","Discover Credit Cards","DISCOVER"),
+    C007("MIR", "MIR","MIR","MIR","MIR","MIR"),
+    C010("ì•Œë¦¬í˜ì´", "AliPay","AliPay","æ”¯ä»˜å®","æ”¯ä»˜å¯¶","AliPay"),
+    C015("PayPal", "PayPal","PayPal","è´å®","PayPal","PayPal"),
+    C020("Tenpay", "Tenpay","Tenpay","è´¢ä»˜é€š","è²¡ä»˜é€š","Tenpay"),
+    C023("UnionPay", "UnionPay","UnionPay","é“¶è”","éŠ€è¯","UnionPay"),
+    /** ì´ì»¨ì—†ìŒ**/
+    C024("eContext", "eContext ì˜ì–´","eContext ì¼ë³¸","eContext ì¤‘êµ­ì–´","eContext ëŒ€ë§Œ","eContext íƒœêµ­"),
+    C025("WeChat", "WeChat","WeChat","å¾®ä¿¡","å¾®ä¿¡","WeChat"),
+    C026("UnionPay(Offline)", "UnionPay (Offline)","UnionPay(Offline)","é“¶è”ï¼ˆçº¿ä¸‹ï¼‰","éŠ€è¯ï¼ˆé›¢ç·šï¼‰","UnionPay (Offline)"),
+    C027("Molpay", "MOLPay","Molpay","Molpay","MOLPay","MOLPay"),
+    C033("WeChat(In App)", "WeChat(In App)","WeChat(In App)","å¾®ä¿¡(In App)","å¾®ä¿¡(In App)","WeChat(In App)"),
+    C037("WeChat(OA)", "WeChat(OA)","WeChat(OA)","å¾®ä¿¡(OA)","å¾®ä¿¡(OA)","WeChat(OA)"),
+    C039("Molpay(VND)", "MOLPay(VND)","Molpay(VND)","Molpay(VND)","MOLPay(VND)","MOLPay(VND)"),
+    C040("Molpay(THB)", "MOLPay(THB)","Molpay(THB)","Molpay(THB)","MOLPay(THB)","MOLPay(THB)"),
+    C041("í† ìŠ¤", "TOSS","TOSS","TOSS","TOSS","TOSS"),
+    C042("PayPal", "PayPal","PayPal","è´å®","PayPal","PayPal"),
+    C043("ìœ ë¨¸ë‹ˆ", "Yoomoney","Yoomoney","Yoomoney","Yoomoney","Yoomoney"),
+    C044("ì¹´ì¹´ì˜¤í˜ì´", "Kakao pay","Kakao pay","Kakao pay","Kakao pay","Kakao pay"),
+    C045("ê°€ìƒê³„ì¢Œ ", "Virtual account","ãƒãƒ¼ãƒãƒ£ãƒ«å£åº§","è™šæ‹Ÿè´¦æˆ·","è™›æ“¬å¸³æˆ¶","à¸šà¸±à¸à¸Šà¸µà¹€à¸ªà¸¡à¸·à¸­à¸™"),
+    C046("í˜ì´ì½”", "Payco","Payco","Payco","PAYCO","Payco"),
+    C047("WeChat(MINI)", "WeChat(MINI)","WeChat(MINI)","å¾®ä¿¡(MINI)","å¾®ä¿¡(MINI)","WeChat(MINI)"),
+    C049("UnionPay(In App)", "UnionPay(In App)","UnionPay(In App)","é“¶è”(In App)","éŠ€è¯(In App)","UnionPay(In App)"),
+    C056("ìŠ¤ë§ˆì¼í˜ì´", "Smile pay","Smile pay","SmilePay","SmilePay","SmilePay"),
+    /** VN eWallet**/
+    C057("VN eWallet", "VN eWallet ì˜ì–´","VN eWallet ì¼ë³¸","VN eWallet ì¤‘êµ­ì–´","VN eWallet ëŒ€ë§Œ","VN eWallet íƒœêµ­"),
 
-               C059("³×ÀÌ¹öÆäÀÌ(Card)", "Naver Pay(Card)","Naver Pay(Card)","NaverPay(Card)","NaverPay(Card)","NaverPay(Card)"),
-               C060("³×ÀÌ¹öÆäÀÌ(Point)", "Naver Pay(Point)","Naver Pay(Point)","NaverPay(Point)","NaverPay(Point)","NaverPay(Point)"),
-               C061("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(Alipay_CN)", "Alipay Plus(Alipay_CN)","Alipay Plus(Alipay_CN)","ò¨Üõ?+(Alipay_CN)","ò¨ÜõÜÄ+(Alipay_CN)","Alipay Plus(Alipay_CN)"),
-               C062("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(Alipay_HK)", "Alipay Plus(Alipay_HK)","Alipay Plus(Alipay_HK)","ò¨Üõ?+(Alipay_HK)","ò¨ÜõÜÄ+(Alipay_HK)","Alipay Plus(Alipay_HK)"),
-               C063("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(TRUEMONEY)", "Alipay Plus(TRUEMONEY)","Alipay Plus(TRUEMONEY)","ò¨Üõ?+(TRUEMONEY)","ò¨ÜõÜÄ+(TRUEMONEY)","Alipay Plus(TRUEMONEY)"),
-               C064("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(TNG)", "Alipay Plus(TNG)","Alipay Plus(TNG)º»","ò¨Üõ?+","ò¨ÜõÜÄ+(TNG)","Alipay Plus(TNG)"),
-               C065("¾Ë¸®ÆäÀÌ ÇÃ·¯½ºs(GCASH)", "Alipay Plus(GCASH)","Alipay Plus(GCASH)","ò¨Üõ?+(GCASH)","ò¨ÜõÜÄ+(GCASH)","Alipay Plus(GCASH)"),
-               C066("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(DANA)", "Alipay Plus(DANA)","Alipay Plus(DANA)","ò¨Üõ?+","ò¨ÜõÜÄ+(DANA)","Alipay Plus(DANA)"),
-               C067("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(KAKAOPAY)", "Alipay Plus(KAKAOPAY)","Alipay Plus(KAKAOPAY)","ò¨Üõ?+(KAKAOPAY)","ò¨ÜõÜÄ+(KAKAOPAY)","Alipay Plus(KAKAOPAY)"),
-               C068("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(ALIPAY_MO)", "Alipay Plus(ALIPAY_MO)","Alipay Plus(ALIPAY_MO)","ò¨Üõ?+(ALIPAY_MO)","ò¨ÜõÜÄ+(ALIPAY_MO)","Alipay Plus(ALIPAY_MO)"),
-               C069("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(PAYTM)", "Alipay Plus(PAYTM)","Alipay Plus(PAYTM)","ò¨Üõ?+","ò¨ÜõÜÄ+(PAYTM)","ò¨ÜõÜÄ+(PAYTM)"),
-               C070("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(EASYPAISA)", "Alipay Plus(EASYPAISA)","Alipay Plus(EASYPAISA)","ò¨Üõ?+(EASYPAISA)","ò¨ÜõÜÄ+(EASYPAISA)","Alipay Plus(EASYPAISA)"),
-               C071("¾Ë¸®ÆäÀÌ ÇÃ·¯½º(BKASH)", "Alipay Plus(BKASH)","Alipay Plus(BKASH)","ò¨Üõ?+(BKASH)","ò¨ÜõÜÄ+(BKASH)","Alipay Plus(BKASH)"),
-
-
+    C059("ë„¤ì´ë²„í˜ì´(Card)", "Naver Pay(Card)","Naver Pay(Card)","NaverPay(Card)","NaverPay(Card)","NaverPay(Card)"),
+    C060("ë„¤ì´ë²„í˜ì´(Point)", "Naver Pay(Point)","Naver Pay(Point)","NaverPay(Point)","NaverPay(Point)","NaverPay(Point)"),
+    C061("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(Alipay_CN)", "Alipay Plus(Alipay_CN)","Alipay Plus(Alipay_CN)","æ”¯ä»˜å®+(Alipay_CN)","æ”¯ä»˜å¯¶+(Alipay_CN)","Alipay Plus(Alipay_CN)"),
+    C062("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(Alipay_HK)", "Alipay Plus(Alipay_HK)","Alipay Plus(Alipay_HK)","æ”¯ä»˜å®+(Alipay_HK)","æ”¯ä»˜å¯¶+(Alipay_HK)","Alipay Plus(Alipay_HK)"),
+    C063("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(TRUEMONEY)", "Alipay Plus(TRUEMONEY)","Alipay Plus(TRUEMONEY)","æ”¯ä»˜å®+(TRUEMONEY)","æ”¯ä»˜å¯¶+(TRUEMONEY)","Alipay Plus(TRUEMONEY)"),
+    C064("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(TNG)", "Alipay Plus(TNG)","Alipay Plus(TNG)ë³¸","æ”¯ä»˜å®+","æ”¯ä»˜å¯¶+(TNG)","Alipay Plus(TNG)"),
+    C065("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤s(GCASH)", "Alipay Plus(GCASH)","Alipay Plus(GCASH)","æ”¯ä»˜å®+(GCASH)","æ”¯ä»˜å¯¶+(GCASH)","Alipay Plus(GCASH)"),
+    C066("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(DANA)", "Alipay Plus(DANA)","Alipay Plus(DANA)","æ”¯ä»˜å®+","æ”¯ä»˜å¯¶+(DANA)","Alipay Plus(DANA)"),
+    C067("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(KAKAOPAY)", "Alipay Plus(KAKAOPAY)","Alipay Plus(KAKAOPAY)","æ”¯ä»˜å®+(KAKAOPAY)","æ”¯ä»˜å¯¶+(KAKAOPAY)","Alipay Plus(KAKAOPAY)"),
+    C068("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(ALIPAY_MO)", "Alipay Plus(ALIPAY_MO)","Alipay Plus(ALIPAY_MO)","æ”¯ä»˜å®+(ALIPAY_MO)","æ”¯ä»˜å¯¶+(ALIPAY_MO)","Alipay Plus(ALIPAY_MO)"),
+    C069("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(PAYTM)", "Alipay Plus(PAYTM)","Alipay Plus(PAYTM)","æ”¯ä»˜å®+","æ”¯ä»˜å¯¶+(PAYTM)","æ”¯ä»˜å¯¶+(PAYTM)"),
+    C070("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(EASYPAISA)", "Alipay Plus(EASYPAISA)","Alipay Plus(EASYPAISA)","æ”¯ä»˜å®+(EASYPAISA)","æ”¯ä»˜å¯¶+(EASYPAISA)","Alipay Plus(EASYPAISA)"),
+    C071("ì•Œë¦¬í˜ì´ í”ŒëŸ¬ìŠ¤(BKASH)", "Alipay Plus(BKASH)","Alipay Plus(BKASH)","æ”¯ä»˜å®+(BKASH)","æ”¯ä»˜å¯¶+(BKASH)","Alipay Plus(BKASH)"),
 
 
 
 
-               C072("±×·¦ÆäÀÌ", "GrabPay","GrabPay","GrabPay","GrabPay","GrabPay"),            ///Ãß°¡ÇØ¾ßÇÔ (°¡·Î ¾È °ª)
-               C073("¶óÀÎÆäÀÌ", "LINE Pay","LINE Pay","LINE Pay","LINE Pay","LINE Pay"),
-               C074("¼îÇÇÆäÀÌ", "ShopeePay","ShopeePay","ShopeePay","ShopeePay","ShopeePay"),
-
-               /** 123alternative**/
-               C075("123alternative", "123alternative ¿µ¾î","123alternative ÀÏº»","123alternative Áß±¹¾î","123alternative ´ë¸¸","123alternative ÅÂ±¹"),
-               C076("±×·¦ÆäÀÌ(MYR)", "GrabPay(MYR)","GrabPay(MYR)","GrabPay(MYR)","GrabPay(MYR)","GrabPay(MYR)"),
-               C077("±×·¦ÆäÀÌ(PHP)", "GrabPay(PHP)","GrabPay(PHP)","GrabPay(PHP)","GrabPay(PHP)","GrabPay(PHP)"),
-
-               /** BC ¾ø¤·¸§**/
-               CC00("BC card", "BC card ¿µ¾î","BC card ÀÏº»","BC card Áß±¹¾î","BC card ´ë¸¸","BC card ÅÂ±¹"),
-
-               CC01("KB (±¹¹Î)", "KB (Kookmin)","KB (Kookmin)","KB (Kookmin)","KB (Kookmin)","KB (Kookmin)"),
-               CC02("ÇÏ³ª (¿ÜÈ¯)", "Hana (KEB)","KEB Hana Card ÀÏº»","KEB Hana Card Áß±¹¾î","KEB Hana Card ´ë¸¸","KEB Hana Card ÅÂ±¹"),
-               //ÇÏ³ª ¹¹°¡ ÁøÂ¥ÀÎÁö ÇØ°áÇÏ±â
-               CC03("»ï¼º", "Samsung","Samsung","Samsung","Samsung","Samsung"),
-               CC04("½ÅÇÑ", "Shinhan","Shinhan","Shinhan","Shinhan","Shinhan"),
-               CC05("Çö´ë", "Hyundai","Hyundai","Hyundai","Hyundai","Hyundai"),
-               CC06("·Ôµ¥", "Lotte","Lotte","Lotte","Lotte","Lotte"),
-               CC07("NH (³óÇù)", "NH","NH","NH","NH","NH"),
-               CC09("¾¾Æ¼", "Citi","Citi","Citi","Citi","Citi"),
-               CC10("¿ì¸®", "Woori","Woori","Woori","Woori","Woori"),
 
 
-               CC11("¼öÇù", "Suhyup","Suhyup","Suhyup","Suhyup","Suhyup"),
+    C072("ê·¸ë©í˜ì´", "GrabPay","GrabPay","GrabPay","GrabPay","GrabPay"), ///ì¶”ê°€í•´ì•¼í•¨ (ê°€ë¡œ ì•ˆ ê°’)
+    C073("ë¼ì¸í˜ì´", "LINE Pay","LINE Pay","LINE Pay","LINE Pay","LINE Pay"),
+    C074("ì‡¼í”¼í˜ì´", "ShopeePay","ShopeePay","ShopeePay","ShopeePay","ShopeePay"),
 
-               //È®ÀÎÇØº¸±â
-               CC12("Á¦ÁÖ", "Jeju","Jeju","Jeju","Jeju","Jeju"),
-               CC13("ÀüÁÖ", "Jeonbuk","Jeonbuk","Jeonbuk","Jeonbuk","Jeonbuk"),
+    /** 123alternative**/
+    C075("123alternative", "123alternative ì˜ì–´","123alternative ì¼ë³¸","123alternative ì¤‘êµ­ì–´","123alternative ëŒ€ë§Œ","123alternative íƒœêµ­"),
+    C076("ê·¸ë©í˜ì´(MYR)", "GrabPay(MYR)","GrabPay(MYR)","GrabPay(MYR)","GrabPay(MYR)","GrabPay(MYR)"),
+    C077("ê·¸ë©í˜ì´(PHP)", "GrabPay(PHP)","GrabPay(PHP)","GrabPay(PHP)","GrabPay(PHP)","GrabPay(PHP)"),
 
+    /** BC ì—†ã…‡ë¦„**/
+    CC00("BC card", "BC card ì˜ì–´","BC card ì¼ë³¸","BC card ì¤‘êµ­ì–´","BC card ëŒ€ë§Œ","BC card íƒœêµ­"),
 
-               //¿©±â¼­ºÎÅÍ È®ÀÎÇÏ±â DB±îÁö È®ÀÎÇÏ±â
-               CC14("KJ Bank Card", "KJ Bank Card ¿µ¾î","KJ Bank Card ÀÏº»","KJ Bank Card Áß±¹¾î","KJ Bank Card ´ë¸¸","KJ Bank Card ÅÂ±¹"),
-               CC16("kakaobank Card", "kakaobank Card ¿µ¾î","kakaobank Card ÀÏº»","kakaobank Card Áß±¹¾î","kakaobank Card ´ë¸¸","kakaobank Card ÅÂ±¹"),
-               CC17("K bank Card", "K bank Card ¿µ¾î","K bank Card ÀÏº»","K bank Card Áß±¹¾î","K bank Card ´ë¸¸","½ÅK bank Card¿ëÄ«µå ÅÂ±¹"),
-               CC18("Miraeasset Card", "Miraeasset Card ¿µ¾î","Miraeasset Card ÀÏº»","Miraeasset Card Áß±¹¾î","Miraeasset Card ´ë¸¸","Miraeasset Card ÅÂ±¹"),
-               CC19("Kona Card", "Kona Card ¿µ¾î","Kona Card ÀÏº»","Kona Card Áß±¹¾î","Kona Card ´ë¸¸","Kona Card ÅÂ±¹"),
-               CC20("Toss Card", "Toss Card ¿µ¾î","Toss Card ÀÏº»","Toss Card Áß±¹¾î","Toss Card ´ë¸¸","Toss Card ÅÂ±¹"),
-               CC21("Chai Card", "Chai Card ¿µ¾î","Chai Card ÀÏº»","Chai Card Áß±¹¾î","Chai Card ´ë¸¸","Chai Card ÅÂ±¹"),
-               CC22("KDBC Card", "KDBC Card ¿µ¾î","KDBC Card ÀÏº»","KDBC Card Áß±¹¾î","KDBC Card ´ë¸¸","KDBC Card ÅÂ±¹"),
-               CC23("Post Office", "Post Office ¿µ¾î","Post Office ÀÏº»","Post Office Áß±¹¾î","Post Office ´ë¸¸","Post Office ÅÂ±¹"),
-               CC24("KDB Card", "KDB Card ¿µ¾î","KDB Card ÀÏº»","KDB Card Áß±¹¾î","KDB Card ´ë¸¸","KDB Card ÅÂ±¹"),
-               CC25("SC Card", "SC Card ¿µ¾î","SC Card ÀÏº»","SC Card Áß±¹¾î","SC Card ´ë¸¸","SC Card ÅÂ±¹"),
-               CC26("IBK Card", "IBK Card ¿µ¾î","IBK Card ÀÏº»","IBK Card Áß±¹¾î","IBK Card ´ë¸¸","IBK Card ÅÂ±¹"),
-               CC27("KB Securities", "KB Securities ¿µ¾î","KB Securities ÀÏº»","KB Securities Áß±¹¾î","KB Securities ´ë¸¸","KB Securities ÅÂ±¹"),
-               CC28("Credit Union", "Credit Union ¿µ¾î","Credit Union ÀÏº»","Credit Union Áß±¹¾î","Credit Union ´ë¸¸","Credit Union ÅÂ±¹"),
-               CC99("±âÅ¸Ä«µå", "±âÅ¸Ä«µå ¿µ¾î","±âÅ¸Ä«µå ÀÏº»","±âÅ¸Ä«µå Áß±¹¾î","±âÅ¸Ä«µå ´ë¸¸","±âÅ¸Ä«µå ÅÂ±¹");
+    CC01("KB (êµ­ë¯¼)", "KB (Kookmin)","KB (Kookmin)","KB (Kookmin)","KB (Kookmin)","KB (Kookmin)"),
+    CC02("í•˜ë‚˜ (ì™¸í™˜)", "Hana (KEB)","KEB Hana Card ì¼ë³¸","KEB Hana Card ì¤‘êµ­ì–´","KEB Hana Card ëŒ€ë§Œ","KEB Hana Card íƒœêµ­"),
+    //í•˜ë‚˜ ë­ê°€ ì§„ì§œì¸ì§€ í•´ê²°í•˜ê¸°
+    CC03("ì‚¼ì„±", "Samsung","Samsung","Samsung","Samsung","Samsung"),
+    CC04("ì‹ í•œ", "Shinhan","Shinhan","Shinhan","Shinhan","Shinhan"),
+    CC05("í˜„ëŒ€", "Hyundai","Hyundai","Hyundai","Hyundai","Hyundai"),
+    CC06("ë¡¯ë°", "Lotte","Lotte","Lotte","Lotte","Lotte"),
+    CC07("NH (ë†í˜‘)", "NH","NH","NH","NH","NH"),
+    CC09("ì”¨í‹°", "Citi","Citi","Citi","Citi","Citi"),
+    CC10("ìš°ë¦¬", "Woori","Woori","Woori","Woori","Woori"),
+    CC11("ìˆ˜í˜‘", "Suhyup","Suhyup","Suhyup","Suhyup","Suhyup"),
+    CC12("ì œì£¼", "Jeju","Jeju","Jeju","Jeju","Jeju"),
+    CC13("ì „ì£¼", "Jeonbuk","Jeonbuk","Jeonbuk","Jeonbuk","Jeonbuk"),
+    CC14("ê´‘ì£¼", "Kwangju","Kwangju","Kwangju","Kwangju","Kwangju"),
 
 
 
@@ -108,63 +87,92 @@ package Paymethod;
 
 
 
+    CC16("ì¹´ì¹´ì˜¤ë±…í¬", "Kakaobank","Kakaobank","Kakaobank","Kakaobank","Kakaobank"),
+    /**ì¼€ì´ë±…í¬ ì—†ë‹¤.**/
+    CC17("ì¼€ì´ë±…í¬", "K bank","K bank","K bank","K bank","K bank"),
+    CC18("ë¯¸ë˜ì—ì…‹ëŒ€ìš°", "MiraeAsset Daewoo","MiraeAsset Daewoo","MiraeAsset Daewoo","Mirae Asset Daewoo ç¾é‡‘å¡(Debit Card)","MiraeAsset Daewoo"),
+    /**ì½”ë‚˜ ì¹´ë“œ ì—†ë‹¤.**/
+    CC19(" ì½”ë‚˜ì¹´ë“œ", "Kona Card","Kona Card","Kona Card","Kona Card","Kona Card"),
+    CC20("í† ìŠ¤", "Toss","Toss","Toss","Toss","Toss"),
+    /**ì°¨ì´ ì¹´ë“œ ì—†ë‹¤.**/
+    CC21("ì°¨ì´ì¹´ë“œ", "Chai Card","Chai Card","Chai Card","Chai Card","Chai Card"),
+    /**KDBC ì¹´ë“œ ì—†ë‹¤.**/
+    CC22("KDBC Card", "KDBC Card ì˜ì–´","KDBC Card ì¼ë³¸","KDBC Card ì¤‘êµ­ì–´","KDBC Card ëŒ€ë§Œ","KDBC Card íƒœêµ­"),
+    /**ìš°ì²´êµ­ ì—†ë‹¤.**/
+    CC23("ìš°ì²´êµ­", "Post Office","Post Office","Post Office","Post Office","Post Office"),
+    /**kdb ì—†ë‹¤.**/
+    CC24("KDB Card", "KDB Card ì˜ì–´","KDB Card ì¼ë³¸","KDB Card ì¤‘êµ­ì–´","KDB Card ëŒ€ë§Œ","KDB Card íƒœêµ­"),
+    /**sc ì—†ë‹¤.**/
+    CC25("SC Card", "SC Card ì˜ì–´","SC Card ì¼ë³¸","SC Card ì¤‘êµ­ì–´","SC Card ëŒ€ë§Œ","SC Card íƒœêµ­"),
+    CC26("ê¸°ì—…ì€í–‰", "Industrial bank of Korea","Industrial bank of Korea","Industrial bank of Korea","Industrial bank of Korea","Industrial bank of Korea"),
+    /**KB Securities ì—†ë‹¤.**/
+    CC27("KB Securities", "KB Securities ì˜ì–´","KB Securities ì¼ë³¸","KB Securities ì¤‘êµ­ì–´","KB Securities ëŒ€ë§Œ","KB Securities íƒœêµ­"),
+    /**Credit Union ì—†ë‹¤.**/
+    CC28("Credit Union", "Credit Union ì˜ì–´","Credit Union ì¼ë³¸","Credit Union ì¤‘êµ­ì–´","Credit Union ëŒ€ë§Œ","Credit Union íƒœêµ­"),
+    /**ê¸°íƒ€ì¹´ë“œ ì—†ë‹¤.**/
+    CC99("ê¸°íƒ€ì¹´ë“œ", "ê¸°íƒ€ì¹´ë“œ ì˜ì–´","ê¸°íƒ€ì¹´ë“œ ì¼ë³¸","ê¸°íƒ€ì¹´ë“œ ì¤‘êµ­ì–´","ê¸°íƒ€ì¹´ë“œ ëŒ€ë§Œ","ê¸°íƒ€ì¹´ë“œ íƒœêµ­");
 
 
 
 
-               private String krName;
-               private String enName;
-               private String jaName;
-               private String zhName;
-               private String thName;
-               private String twName;
 
 
-               Paymethod(String krName, String enName, String jaName, String zhName, String thName, String twName) {
-                      this.krName = krName;
-                      this.enName = enName;
-                      this.jaName = jaName;
-                      this.zhName = zhName;
-                      this.thName = thName;
-                      this.twName = twName;
-               }
-
-               public String getKrName() {
-                      return krName;
-               }
-
-               public String getEnName() {
-                      return enName;
-               }
-
-               public String getJaName() {
-                      return jaName;
-               }
-
-               public String getZhName() {
-                      return zhName;
-               }
-
-               public String getThName() {
-                      return thName;
-               }
-
-               public String getTwName() {
-                      return twName;
-               }
 
 
-               @Override
-               public String toString() {
-                      return "Paymethod{" +
-                              "krName='" + krName + '\'' +
-                              ", enName='" + enName + '\'' +
-                              ", jaName='" + jaName + '\'' +
-                              ", zhName='" + zhName + '\'' +
-                              ", thName='" + thName + '\'' +
-                              ", twName='" + twName + '\'' +
-                              '}';
-               }
- }
 
 
+
+    private String krName;
+    private String enName;
+    private String jaName;
+    private String zhName;
+    private String twName;
+    private String thName;
+
+
+    Paymethod(String krName, String enName, String jaName, String zhName, String twName, String thName) {
+        this.krName = krName;
+        this.enName = enName;
+        this.jaName = jaName;
+        this.zhName = zhName;
+        this.twName = twName;
+        this.thName = thName;
+    }
+
+    public String getKrName() {
+        return krName;
+    }
+
+    public String getEnName() {
+        return enName;
+    }
+
+    public String getJaName() {
+        return jaName;
+    }
+
+    public String getZhName() {
+        return zhName;
+    }
+
+    public String getThName() {
+        return thName;
+    }
+
+    public String getTwName() {
+        return twName;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Paymethod{" +
+                "krName='" + krName + '\'' +
+                ", enName='" + enName + '\'' +
+                ", jaName='" + jaName + '\'' +
+                ", zhName='" + zhName + '\'' +
+                ", thName='" + thName + '\'' +
+                ", twName='" + twName + '\'' +
+                '}';
+    }
+}
