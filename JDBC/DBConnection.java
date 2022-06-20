@@ -28,14 +28,21 @@ public class DBConnection {
 
         while (resultSet.next())
         {
-            String TRANSNO  = resultSet.getString("TRANSNO");
+            Integer TRANSNO  = resultSet.getInt("TRANSNO");
             String TRANSID  = resultSet.getString("TRANSID");
-            String MERCHANTID  = resultSet.getString("MERCHANTID");
-            String MERCHANTID  = resultSet.getString("MERCHANTID");
+            String MERCHANTNO  = resultSet.getString("MERCHANTNO");
+            String  MERCHANTID = resultSet.getString("MERCHANTID");
             String RESMSG  = resultSet.getString("RESMSG");
 
 
-            dtoArrayList.add(new Dto(TRANSNO,TRANSID,MERCHANTID,))
+            Dto targetDto = new Dto(TRANSNO, TRANSID, MERCHANTNO, MERCHANTID, RESMSG);
+
+            System.out.println(targetDto.toString());
+            dtoArrayList.add(targetDto);
+            
+
+
+
 
         }
 

@@ -60,5 +60,17 @@ public class Dto {
         this.MERCCHANTID = MERCCHANTID;
         this.RESMSG = RESMSG;
     }
+
+
+    @Override
+    public String toString() {
+        return "Dto{" +
+                "TRANSNO=" + TRANSNO +
+                ", TRANSID='" + TRANSID + '\'' +
+                ", MERCHANTINO='" + MERCHANTINO + '\'' +
+                ", MERCCHANTID='" + MERCCHANTID + '\'' +
+                ", RESMSG='" + RESMSG + '\'' +
+                '}';
+    }
 }
 
