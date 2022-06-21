@@ -39,11 +39,6 @@ public class DBConnection {
 
             System.out.println(targetDto.toString());
             dtoArrayList.add(targetDto);
-            
-
-
-
-
         }
 
 
